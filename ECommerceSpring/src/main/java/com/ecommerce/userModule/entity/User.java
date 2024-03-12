@@ -34,9 +34,6 @@ public class User extends BaseEntity {
     @Column(nullable = false)
     private String email;
 
-    @Column
-    private String color;
-
 
     @ManyToMany(fetch = FetchType.LAZY)
     @EqualsAndHashCode.Exclude @ToString.Exclude
